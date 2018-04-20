@@ -4,4 +4,4 @@
     - name: run shutdown
       raw: ifconfig
       register: ifconfig
-    - debug: var=shutdown -r 0
+    - debug: var=sudo su shutdown
