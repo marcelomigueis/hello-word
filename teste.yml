@@ -4,4 +4,4 @@
     - name: run poweroff
       raw: ifconfig
       register: ifconfig
-    - debug: var=poweroff
+    - debug: var=poweroff sudo
