@@ -2,7 +2,4 @@
   hosts: all
   tasks:
     - name: run shutdown
-      raw: ifconfig
-      register: ifconfig
-    - shell: reboot
-    - async: 0  
+    - shell: poweroff
