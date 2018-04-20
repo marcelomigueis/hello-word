@@ -2,4 +2,4 @@
   hosts: all
   tasks:
     - name: run shutdown
-    - shell: poweroff
+      shell: poweroff
