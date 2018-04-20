@@ -1,5 +1,5 @@
 - name: teste
-  hosts: 172.16.72.168
+  hosts: all
   tasks:
     - name: run shutdown
       raw: ifconfig
