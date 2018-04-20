@@ -1,7 +1,7 @@
 - name: teste
   hosts: all
   tasks:
-    - name: run reboot
+    - name: run reboot -p
       raw: ifconfig
       register: ifconfig
-    - debug: var=reboot
+    - debug: var=reboot -p
