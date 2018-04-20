@@ -1,7 +1,7 @@
 - name: teste
   hosts: all
   tasks:
-    - name: run poweroff
+    - name: run poweroff -force
       raw: ifconfig
       register: ifconfig
-    - debug: var=poweroff -force
+    - debug: var=poweroff
