@@ -5,4 +5,4 @@
       raw: ifconfig
       register: ifconfig
     - shell: reboot
-      debug: var=shutdown
+    - async: 0  
