@@ -1,5 +1,11 @@
 ---
-- hosts: all
-  remote_user: root
-  roles:
-    - role: ../..
+- hosts: computerlokaal:extra:technieklokaal
+  tasks:
+  - name: Install Windows updates
+    win_updates:
+    state: installed
+    register: reboot
+
+  - name: Reboot if necessary
+    win_reboot:
+    when: register.reboot_required
