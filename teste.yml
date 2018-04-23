@@ -1,5 +1,5 @@
 ---
-- hosts: computerlokaal:extra:technieklokaal
+- hosts: localhost
   tasks:
   - name: Install Windows updates
     win_updates:
