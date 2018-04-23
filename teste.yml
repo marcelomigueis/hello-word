@@ -1,11 +1,12 @@
 ---
-- hosts: all
-  remote_user: root
-  
-  vars_prompt:
-    - name: "name"
-      prompt: "what is your name?"
-    - name: "quest"
-      prompt: "what is your quest?"
-    - name: "favcolor"
-      prompt: "what is your favorite color?"
+- name: Create a github Repo
+      github_repo:
+        github_auth_key: "..."
+        name: "Hello-World",
+        description: "This is your first repository",
+        private: yes
+        has_issues: no
+        has_wiki: no
+        has_downloads: no
+        state: present
+      register: result
