@@ -14,7 +14,7 @@
       win_stat: path="C:/Windows/win.ini"
       register: stat_file
 
-      debug: var=stat_file
+    - debug: var=stat_file
 
     - name: check stat_file result
       assert:
