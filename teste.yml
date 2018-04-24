@@ -3,6 +3,10 @@
 +  hosts: localhost
 +  tasks:
 +    - name: Install Firefox
+       ansible_user :  Testeansible 
+       ansible_password :   
+       ansible_connection :  winrm 
+       ansible_winrm_transport :  básico
 +      win_chocolatey:
 +        name: firefox
 +        state: present
