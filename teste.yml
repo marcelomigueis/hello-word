@@ -9,4 +9,4 @@
        ansible_winrm_transport :  básico
       win_chocolatey:
         name: firefox
-        state: present
+        state: install
