@@ -1,6 +1,6 @@
 ---
 - name: test raw module
-  hosts: 172.16.72.119 
+  hosts: localhost 
   tasks:
     - name: run ipconfig
       raw: ipconfig
@@ -11,7 +11,7 @@
   hosts: windows
   tasks:
     - name: test stat module on file
-      win_stat: path="C:/Windows/win.ini"
+      win_stat: path="C:\Windows\System32\notepad.exe"
       register: stat_file
 
     - debug: var=stat_file
