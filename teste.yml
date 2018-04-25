@@ -1,8 +1,6 @@
 ---
-- name: test chocolatey with ansible
+- name: test
   hosts: localhost
   tasks:
     - name: Install Firefox
-        win_chocolatey:
-        name: firefox
-        state: install
+       state: install
