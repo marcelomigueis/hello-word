@@ -3,4 +3,5 @@
   hosts: localhost
   tasks:
     - name: Install Firefox
-       state: present
+       state: installed
+       tags: firefox
